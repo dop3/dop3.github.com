@@ -1,4 +1,9 @@
-# CHANGELOG FOR VERSION 1.0.1
+CHANGELOG FOR VERSION 1.0.2
+===========================
+
+Added dist files and folder to repo
+
+CHANGELOG FOR VERSION 1.0.1
 ===========================
 
 Edit in package.json
