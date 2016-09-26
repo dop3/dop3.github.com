@@ -2,7 +2,7 @@ var gulp = require('gulp');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var imagemin = require('gulp-imagemin');
-var sourcemaps = require('gulp-sourcemaps');
+// var sourcemaps = require('gulp-sourcemaps');
 var cleanCSS = require('gulp-clean-css');
 var del = require('del');
 
@@ -36,10 +36,10 @@ gulp.task('scripts', ['cleanjs'], function() {
     // Minify and copy all JavaScript (except vendor scripts)
     // with sourcemaps all the way down
     return gulp.src(paths.scripts)
-        .pipe(sourcemaps.init())
+        // .pipe(sourcemaps.init())
         .pipe(uglify())
         .pipe(concat('ms.min.js'))
-        .pipe(sourcemaps.write())
+        // .pipe(sourcemaps.write())
         .pipe(gulp.dest(paths.dist + '/js'));
 });
 
@@ -47,10 +47,10 @@ gulp.task('stylesheets', ['cleancss'], function() {
     // Minify and copy all JavaScript (except vendor scripts)
     // with sourcemaps all the way down
     return gulp.src(paths.stylesheets)
-        .pipe(sourcemaps.init())
+        // .pipe(sourcemaps.init())
         .pipe(cleanCSS())
         .pipe(concat('ms.min.css'))
-        .pipe(sourcemaps.write())
+        // .pipe(sourcemaps.write())
         .pipe(gulp.dest(paths.dist + '/css'));
 });
 

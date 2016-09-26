@@ -1,3 +1,8 @@
+CHANGELOG FOR VERSION 1.0.3
+===========================
+
+Do not use sourcemaps
+
 CHANGELOG FOR VERSION 1.0.2
 ===========================
 
