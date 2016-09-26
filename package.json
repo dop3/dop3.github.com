@@ -1,9 +1,13 @@
 {
   "name": "marcellostani.it",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "My landing page - dop3.github.com or marcellostani.it",
-  "homepage": "www.marcellostani.it",
+  "homepage": "http://www.marcellostani.it",
   "main": "gulpfile.js",
+  "repository" : {
+    "type" : "git"
+  , "url" : "https://github.com/dop3/dop3.github.com.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prod": "gulp --production",
