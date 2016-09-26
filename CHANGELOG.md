@@ -1,3 +1,9 @@
+CHANGELOG FOR VERSION 1.1.0
+===========================
+
+Added instagram photos as background carousel
+
+
 CHANGELOG FOR VERSION 1.0.4
 ===========================
 

@@ -1,5 +1,36 @@
+.overlay, .bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.overlay{
+    background: rgba(255, 255, 255, .5);
+    z-index: 2;
+}
+
+.bg{
+    background-image: url(/dist/img/blank.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-atachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 100vh;
+
+    -webkit-transition: background 3000ms ease-in 2000ms;
+    -moz-transition: background 3000ms ease-in 2000ms;
+    -o-transition: background 3000ms ease-in 2000ms;
+    transition: background 3000ms ease-in 2000ms;
+}
+
 #container{
     position: absolute;
+    z-index: 3;
 }
 .fade{
     opacity: 0;
