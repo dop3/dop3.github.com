@@ -1,0 +1,27 @@
+{
+  "name": "marcellostani.it",
+  "version": "1.0.0",
+  "description": "My landing page - dop3.github.com or marcellostani.it",
+  "homepage": "www.marcellostani.it",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prod": "gulp --production",
+    "dev": "gulp watch"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.*",
+    "gulp-uglify": "^2.0.*",
+    "gulp-sourcemaps": "^1.6.*",
+    "gulp-imagemin": "^3.0.*",
+    "gulp-clean-css": "^2.0.*",
+    "del" : "^2.2.*"
+  },
+  "author": {
+    "name" : "Marcello Stani",
+    "email" : "marcellostani@gmail.com",
+    "url" : "http://www.marcellostani.it"
+  },
+  "license": "ISC"
+}

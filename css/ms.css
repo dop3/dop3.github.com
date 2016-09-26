@@ -1,0 +1,11 @@
+#container{
+    position: absolute;
+}
+.fade{
+    opacity: 0;
+    -webkit-transition: opacity 0.45s linear;
+    transition: opacity 0.45s linear;
+}
+.fade.in{
+    opacity: 1;
+}
