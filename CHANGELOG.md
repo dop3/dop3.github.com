@@ -1,3 +1,9 @@
+CHANGELOG FOR VERSION 1.0.4
+===========================
+
+Added google analytics code
+
+
 CHANGELOG FOR VERSION 1.0.3
 ===========================
 
