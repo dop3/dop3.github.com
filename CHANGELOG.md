@@ -1,3 +1,9 @@
+CHANGELOG FOR VERSION 1.1.1
+===========================
+
+Added css rotate fx on main img (on hover)
+
+
 CHANGELOG FOR VERSION 1.1.0
 ===========================
 
