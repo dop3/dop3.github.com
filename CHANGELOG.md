@@ -1,6 +1,11 @@
 CHANGELOG FOR VERSION 1.1.1
 ===========================
 
+Added title for index.html page
+
+CHANGELOG FOR VERSION 1.1.1
+===========================
+
 Added css rotate fx on main img (on hover)
 
 
