@@ -1,11 +1,11 @@
 .green-color{
-    color: #007537;
+    color: #128E4C;
 }
 .white-color{
     color: #ffffff;
 }
 .red-color{
-    color: #DF083E;
+    color: #DB1241;
 }
 
 .horizontal-menu a, .menu-side a, a.scroll-link{
@@ -16,13 +16,13 @@
 }
 
 .horizontal-menu .active a.active-green-color, .horizontal-menu a.active-green-color:hover, .menu-side a.active-green-color:hover, a.hover-green-color:hover {
-    color: #007537;
+    color: #128E4C;
 }
 .horizontal-menu .active a.active-white-color, .horizontal-menu a.active-white-color:hover, .menu-side a.active-white-color:hover, a.hover-white-color:hover   {
     color: #ffffff;
 }
 .horizontal-menu .active a.active-red-color, .horizontal-menu a.active-red-color:hover, .menu-side a.active-red-color:hover, a.hover-red-color:hover {
-    color: #DF083E;
+    color: #DB1241;
 }
 
 .logo img{
@@ -34,10 +34,10 @@
 
 .section-home .main-btn:hover {
     color: white;
-    background-color: #007537;
-    border-color: #007537;
+    background-color: #128E4C;
+    border-color: #128E4C;
 }
 
 .section-home .notify-input-btn:hover {
-    color: #007537;
+    color: #128E4C;
 }
