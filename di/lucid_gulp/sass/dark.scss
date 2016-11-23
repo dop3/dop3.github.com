@@ -1,0 +1,174 @@
+
+$hover-red: #ff5252;
+
+.plus {
+  color: $hover-red;
+}
+
+html {
+  background-color: white;
+}
+
+p {
+  color: white;
+}
+
+h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6  {
+  color: white;
+}
+
+a{
+  transition: all 0.2s ease;
+  color: white;
+  &:hover
+  {
+    color: $hover-red;
+  }
+  &:focus{
+    color: white;
+  }
+}
+
+.menu-content {
+  background-color: rgba(0,0,0,0.97);
+}
+
+.toggle-icon {
+  border-color: white;
+  span {
+    background-color: $hover-red;
+  }
+}
+
+.rotated-menu,
+.horizontal-menu {
+  .active {
+    a {
+      color: $hover-red;
+    }
+  }
+}
+
+#contact-form {
+  label {
+    color: white;
+    border-bottom-color: white;
+  }
+}
+
+textarea {
+  color: white;
+}
+
+input {
+  color: white;
+}
+
+.services-carousel {
+  span {
+    color: white;
+  }
+}
+
+.services-icon {
+  background-color: white;
+  &:after {
+    border-color: white;
+  }
+}
+
+.portfolio-carousel {
+  a {
+    &:after {
+      background: rgba(255, 82, 82, 0.75);
+    }
+    &:before {
+      color: white;
+    }
+  }
+}
+
+.person-name {
+  color: $hover-red;
+}
+
+.carousel-arrow {
+  color: white;
+  border-color: white;
+  &:hover {
+    border-color: $hover-red;
+    background-color: $hover-red;
+    color: white;
+  }
+}
+
+.carousel-overlay {
+  background-color: rgba(22, 35, 47, 0.9);
+}
+
+.clock-hover {
+  background: white;
+}
+
+.default-clock {
+  color: white;
+}
+
+.main-btn {
+  color: white;
+  border-color: white;
+  &:hover {
+    color: white;
+    background-color: $hover-red;
+    border-color: $hover-red;
+  }
+}
+
+.notify-input {
+  border-color: white;
+}
+
+.notify-input-btn {
+  color: white;
+  &:hover {
+    color: $hover-red;
+  }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-text-fill-color: white !important;
+  color: white !important;
+}
+
+.promo-menu {
+  background-color: #192632;
+}
+
+.scientcraft {
+  a {
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+.demo-text {
+  color: #192632;
+  background-color: white;
+}
+
+.demo {
+  a {
+    &:hover {
+      &:before {
+        color: $hover-red;
+      }
+      &:after {
+        background-color: rgba(25, 38, 50, .9)
+      }
+    }
+  }
+}

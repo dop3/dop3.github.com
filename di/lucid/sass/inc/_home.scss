@@ -1,0 +1,145 @@
+.plus {
+  font-family: Montserrat, sans-serif;
+  font-size: 4rem;
+  float: right;
+  margin: 0;
+}
+
+.heading-text {
+  font-family: Montserrat, sans-serif;
+  @include type-setting(2);
+  margin-top: 20px;
+  width: 90%;
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+}
+
+.notify-btn {
+  transition: visibility 0s, opacity 0.4s linear, background 0.4s 0.04s ease;
+  opacity: 1;
+  visibility: visible;
+}
+
+#subscribe {
+  margin-top: -4rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+
+.notify-input {
+  transition: width 0.3s;
+  font-family: Open Sans, sans-serif;
+  font-size: 1.1rem;
+  padding-left: 1.5rem;
+  height: 4rem;
+  width: 20rem;
+  border: solid 1px;
+  padding-right: 4rem;
+  @media (max-width: 767px) {
+    font-size: 1.4rem;
+  }
+}
+
+.notify-input-btn {
+  background-color: transparent;
+  border: none;
+  width: 4rem;
+  height: 4rem;
+  margin-left: -4rem;
+  font-size: 1.4rem;
+  @media (max-width: 767px) {
+    font-size: 1.6rem
+  }
+}
+
+#clock {
+  height: 23rem;
+  width: 23rem;
+  position: relative;
+  div {
+    float: left;
+    text-align: center;
+    height: 10.7rem;
+    width: 10.7rem;
+  }
+  @media (max-width: 767px) {
+    margin-top: 30px;
+  }
+}
+
+.none-hover {
+  .default-clock {
+    opacity: 0;
+  }
+  .clock-hover {
+    opacity: 1;
+  }
+}
+
+.smalltext {
+  font-size: 1.1rem;
+  padding: 0;
+  margin: 0;
+}
+
+.default-clock {
+  z-index: 100;
+  font-size: 3.45rem;
+  height: 10rem;
+  width: 10rem;
+  position: absolute;
+  border:solid 1px;
+  line-height: 10.7rem;
+  transition: opacity .3s linear;
+  cursor: pointer;
+  @media (pointer: coarse) {
+    opacity: 0;
+  }
+  &:hover {
+    opacity: 0;
+    ~ .clock-hover {
+      opacity: 1;
+    }
+  }
+}
+
+.clock-days {
+  margin-right: 1.6rem;
+}
+
+.clock-minutes {
+  margin-top: 1.6rem;
+  margin-right: 1.6rem;
+}
+
+.clock-seconds {
+  margin-top: 1.6rem;
+}
+
+.clock-hover {
+  transition: opacity 0.5s ease;
+  font-size: 3.45rem;
+  opacity: 0;
+  height: 10rem;
+  padding-top: 2rem;
+  @media (pointer: coarse) {
+    opacity: 1;
+  }
+}
+
+.rotate {
+  transform: rotate(90deg);
+}
+
+.scroll {
+  margin-top: 20rem;
+  font-size: 1.4rem;
+  font-family: Open Sans, sans-serif;
+  letter-spacing: 0.125rem;
+  display: block;
+  @media (max-width: 767px) {
+    display: none;
+  }
+}

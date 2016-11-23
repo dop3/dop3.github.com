@@ -1,0 +1,150 @@
+.carousel-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.carousel-arrow {
+  transition: all 0.2s ease;
+  background-color: transparent;
+  border: solid 1px;
+  margin-top: 0;
+  height: 4rem;
+  width: 4rem;
+  z-index: 10;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.person-carousel {
+  width: 60%;
+  float: right;
+  @media (max-width: 767px) {
+    opacity: 1 !important;
+    width: 100%;
+    float: none;
+    text-align: center;
+  }
+  img {
+    max-width: 70%;
+    max-height: 95vh;
+    float: left;
+    @media (max-width: 767px) {
+      float: none;
+      display: inline-block !important;
+    }
+  }
+}
+
+.carousel-bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  @media (max-width: 767px) {
+    position: inherit;
+  }
+}
+
+.person-prev {
+  position: absolute;
+  @media (max-width: 425px) {
+    right: 6rem;
+    bottom: 0;
+  }
+  @media (min-width: 426px) {
+    right: 30%;
+    bottom: 0;
+  }
+  @media (min-width: 768px) {
+    left: 350px;
+    bottom: 75px;
+  }
+  @media (min-width: 992px) {
+    bottom: 75px;
+    left: 400px;
+  }
+  @media (min-width: 1200px) {
+    bottom: 100px;
+    left: 500px;
+  }
+}
+
+.person-next {
+  position: absolute;
+  @media (max-width: 425px) {
+    right: 0;
+    bottom: 0;
+  }
+  @media (min-width: 426px) {
+    right: calc(30% - 6rem);
+    bottom: 0;
+  }
+  @media (min-width: 768px) {
+    left: calc(350px + 6rem);
+    bottom: 75px;
+  }
+  @media (min-width: 992px) {
+    bottom: 75px;
+    left: calc(400px + 6rem);
+  }
+  @media (min-width: 1200px) {
+    bottom: 100px;
+    left: calc(500px + 6rem);
+  }
+}
+
+.person {
+  transform: rotate(-90deg) translateX(-100%) translateY(100%);
+  position: absolute;
+  z-index: 10;
+  display: inherit;
+  @media (max-width: 425px) {
+    right: 5%;
+    transform: rotate(-90deg) translateX(-30%);
+    transform-origin: right bottom 0;
+  }
+  @media (min-width: 426px) {
+    right: 25%;
+    transform: rotate(-90deg) translateX(-25%);
+    transform-origin: right bottom 0;
+  }
+  @media (min-width: 768px) {
+    bottom: 70%;
+    right: inherit;
+    transform: rotate(-90deg) translateX(-100%) translateY(100%);
+    transform-origin: left bottom 0;
+  }
+  @media (min-width: 992px) {
+    bottom: 70%;
+    margin-left: 20px;
+  }
+  @media (min-width: 1200px) {
+    bottom: 70%;
+    margin-left: 20px;
+  }
+
+}
+
+.person-name {
+  font-size: 1.6rem;
+  letter-spacing: 0.125rem;
+  font-family: Montserrat, sans-serif;
+  display: inline;
+  margin-right: 2.5rem;
+}
+
+.person-post {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.4rem;
+  letter-spacing: 0.125rem;
+  display: inline;
+
+}

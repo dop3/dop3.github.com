@@ -1,0 +1,41 @@
+$base-font-size:  1.4rem;
+$base-line-height: 2.14285714286 * $base-font-size;
+
+$type-skale: (
+    -1: 1.1rem,
+    0:  1.4rem,
+    1:  1.6rem,
+    2:  2.6rem,
+);
+
+@function type-scale($level) {
+    @return map-get($type-skale, $level);
+}
+
+$line-height: (
+    -1: 1.25rem, 
+    0: $base-line-height,
+    1: 3.42857142858rem,
+    2: 2.6rem * 1.84615385,
+    
+);
+
+@function line-height($level) {
+    @return map-get($line-height, $level);
+}
+
+@mixin type-setting($level: 0) {
+  font-size: type-scale($level);
+  line-height: line-height($level);
+}
+
+h1, .h1 {
+    @include type-setting(5);
+    margin-bottom: 5rem;
+    font-size: 6rem;
+    @media (max-width: 1200px) {
+        font-size: 4rem;
+        margin-bottom: 3rem;
+        line-height: 4.25rem;
+    }
+}

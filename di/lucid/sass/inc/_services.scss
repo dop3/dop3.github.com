@@ -1,0 +1,88 @@
+.services-carousel {
+  @media (max-width: 767px) {
+    margin-top: 30px;
+  }
+  span {
+    line-height: 50px;
+    padding-left: 30px;
+    font-size: 1.4rem;
+    @media (max-width: 767px) {
+      padding: 0;
+      display: block;
+      line-height: normal;
+      padding-top: 15px;
+      font-size: 1.6rem;
+    }
+    @media (min-width: 768px) {
+      padding-left: 15px;
+    }
+    @media (min-width: 980px) {
+      padding-left: 30px;
+    }
+  }
+}
+
+.services-item {
+  width: 49% !important;
+  margin-left: 2px;
+  margin-bottom: 60px;
+  @media (max-width: 767px) {
+    text-align: center;
+  }
+}
+
+.services-icon {
+  position: relative;
+  float: left;
+  line-height: 50px;
+  text-align: center;
+  height: 50px;
+  width: 50px;
+  @media (max-width: 767px) {
+    float: none;
+    display: inline-block;
+  }
+  &:after {
+    content: "";
+    position: absolute !important;
+    top: 5px;
+    left: 5px;
+    border: solid 1px;
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+    z-index: -10;
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+  img {
+    display: inline-block !important;
+  }
+}
+
+.services-prev {
+  position: absolute;
+  @media (max-width: 767px) {
+    bottom: 0;
+    right: calc(25% - 45px + 9rem);
+  }
+  @media (min-width: 768px) {
+    bottom: -8rem;
+    left: 0;
+  }
+
+}
+
+.services-next {
+  position: absolute;
+  @media (max-width: 767px) {
+    bottom: 0;
+    right: calc(25% - 45px + 3rem);
+  }
+  @media (min-width: 768px) {
+    bottom: -8rem;
+    left: 6rem;
+  }
+
+}

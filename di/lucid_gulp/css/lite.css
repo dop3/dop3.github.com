@@ -1,0 +1,121 @@
+.plus {
+  color: #ff5252; }
+
+html {
+  background-color: white; }
+
+p {
+  color: #111; }
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  color: #111; }
+
+a {
+  transition: all 0.2s ease;
+  color: #111; }
+  a:hover {
+    color: #ff5252; }
+  a:focus {
+    color: #111; }
+
+.menu-content {
+  background-color: rgba(255, 255, 255, 0.97); }
+
+.toggle-icon {
+  border-color: #111; }
+  .toggle-icon span {
+    background-color: #ff5252; }
+
+.rotated-menu .active a,
+.horizontal-menu .active a {
+  color: #ff5252; }
+
+#contact-form label {
+  color: #111;
+  border-bottom-color: #111; }
+
+textarea {
+  color: #111; }
+
+input {
+  color: #111; }
+
+.services-icon {
+  background-color: #111; }
+  .services-icon:after {
+    border-color: #111; }
+
+.portfolio-carousel a:after {
+  background: rgba(255, 82, 82, 0.75); }
+
+.portfolio-carousel a:before {
+  color: #111; }
+
+.person-name {
+  color: #ff5252; }
+
+.carousel-arrow {
+  color: #111;
+  border-color: #111; }
+  .carousel-arrow:hover {
+    border-color: #ff5252;
+    background-color: #ff5252;
+    color: #111; }
+
+.carousel-overlay {
+  background-color: rgba(255, 255, 255, 0.8); }
+
+.clock-hover {
+  background: #111;
+  color: white; }
+
+.default-clock {
+  color: #111; }
+
+.main-btn {
+  color: #111;
+  border-color: #111; }
+  .main-btn:hover {
+    color: #111;
+    background-color: #ff5252;
+    border-color: #ff5252; }
+
+.notify-input {
+  border-color: #111; }
+
+.notify-input-btn {
+  color: #111; }
+  .notify-input-btn:hover {
+    color: #ff5252; }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-text-fill-color: #111 !important;
+  color: #111 !important; }
+
+.mfp-close {
+  color: #111 !important; }
+
+.mfp-title {
+  color: #111 !important; }
+
+.mfp-bg {
+  background: rgba(255, 255, 255, 0.8) !important; }
+
+.promo-menu {
+  background-color: #fff; }
+
+.scientcraft a:hover {
+  color: #111; }
+
+.demo-text {
+  color: white;
+  background-color: #111; }
+
+.demo a:hover:before {
+  color: #ff5252; }
+
+.demo a:hover:after {
+  background-color: rgba(255, 255, 255, 0.9); }

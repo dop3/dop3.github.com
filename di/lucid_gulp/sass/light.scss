@@ -1,0 +1,188 @@
+
+$hover-red: #ff5252;
+$black: #111;
+
+.plus {
+  color: $hover-red;
+}
+
+html {
+  background-color: white;
+}
+
+p {
+  color: $black;
+}
+
+h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6  {
+  color: $black;
+}
+
+a{
+  transition: all 0.2s ease;
+  color: $black;
+  &:hover
+  {
+    color: $hover-red;
+  }
+  &:focus{
+    color: $black;
+  }
+}
+
+.menu-content {
+  background-color: rgba(255,255,255,0.97);
+}
+
+.toggle-icon {
+  border-color: $black;
+  span {
+    background-color: $hover-red;
+  }
+}
+
+.rotated-menu,
+.horizontal-menu {
+  .active {
+    a {
+      color: $hover-red;
+    }
+  }
+}
+
+#contact-form {
+  label {
+    color: $black;
+    border-bottom-color: $black;
+  }
+}
+
+textarea {
+  color: $black;
+}
+
+input {
+  color: $black;
+}
+
+.services-carousel {
+  span {
+    color: $black;
+  }
+}
+
+.services-icon {
+  background-color: $black;
+  &:after {
+    border-color: $black;
+  }
+}
+
+.portfolio-carousel {
+  a {
+    &:after {
+      background: rgba(255, 82, 82, 0.75);
+    }
+    &:before {
+      color: $black;
+    }
+  }
+}
+
+.person-name {
+  color: $hover-red;
+}
+
+.carousel-arrow {
+  color: $black;
+  border-color: $black;
+  &:hover {
+    border-color: $hover-red;
+    background-color: $hover-red;
+    color: $black;
+  }
+}
+
+.carousel-overlay {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.clock-hover {
+  background: $black;
+  color: white;
+}
+
+.default-clock {
+  color: $black;
+}
+
+.main-btn {
+  color: $black;
+  border-color: $black;
+  &:hover {
+    color: $black;
+    background-color: $hover-red;
+    border-color: $hover-red;
+  }
+}
+
+.notify-input {
+  border-color: $black;
+}
+
+.notify-input-btn {
+  color: $black;
+  &:hover {
+    color: $hover-red;
+  }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-text-fill-color: $black !important;
+  color: $black !important;
+}
+
+.mfp-close {
+  color: $black !important;
+}
+
+.mfp-title {
+  color: $black !important;
+}
+
+.mfp-bg {
+  background: rgba(255,255,255,.8) !important;
+}
+
+.promo-menu {
+  background-color: #fff;
+}
+
+.scientcraft {
+  a {
+    &:hover {
+      color: $black;
+    }
+  }
+}
+
+.demo-text {
+  color: white;
+  background-color: $black;
+}
+
+.demo {
+  a {
+    &:hover {
+      &:before {
+        color: $hover-red;
+      }
+      &:after {
+        background-color: rgba(255, 255, 255, .9)
+      }
+    }
+  }
+}

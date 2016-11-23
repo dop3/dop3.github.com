@@ -1,0 +1,65 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:	Lucid
+Version:	1.0.0
+Author: Scientecraft
+AuthorURL: https://themeforest.net/user/scientecraft/portfolio
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Body
+2. Navigation
+  2.1 Rotated menu / .rotated-menu
+  2.2 Horizontal menu / .horizontal-menu
+  2.3 Side menu / .menu-side
+3. Content / .fullpage
+  3.1 Countdown / #countdown
+  3.2 About-carousel / .team-carousel
+  3.2 Portfolio-carousel / .portfolio-carousel
+  3.3 Services-carousel / .services-carousel
+  3.4 Contact / #contact-form
+4. Footer / .footer
+
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+# [Color codes]
+
+# White (text): #fff
+# Red (plus, hover links) #FF5252
+# Black (text) #111
+# */
+
+//menu
+@import 'inc/_menu.scss';
+
+//layout
+@import 'inc/_layout.scss';
+
+//typography
+@import 'inc/_typography';
+
+//content
+@import 'inc/_content';
+
+//home page
+@import "inc/_home.scss";
+
+//about page
+@import "inc/_about.scss";
+
+//portfolio page
+@import "inc/_portfolio.scss";
+
+//services page
+@import "inc/_services.scss";
+
+//contact page
+@import "inc/_contact.scss";
+
+//fonts
+@import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,700);
