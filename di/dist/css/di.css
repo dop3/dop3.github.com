@@ -1,0 +1,33 @@
+.green-color{
+    color: #007537;
+}
+.white-color{
+    color: #ffffff;
+}
+.red-color{
+    color: #DF083E;
+}
+
+.horizontal-menu a, .menu-side a{
+    opacity: .7;
+}
+.horizontal-menu .active a, .horizontal-menu a:hover, .menu-side a:hover{
+    opacity: 1;
+}
+
+.horizontal-menu .active a.active-green-color, .horizontal-menu a.active-green-color:hover, .menu-side a.active-green-color:hover {
+    color: #007537;
+}
+.horizontal-menu .active a.active-white-color, .horizontal-menu a.active-white-color:hover, .menu-side a.active-white-color:hover   {
+    color: #ffffff;
+}
+.horizontal-menu .active a.active-red-color, .horizontal-menu a.active-red-color:hover, .menu-side a.active-red-color:hover {
+    color: #DF083E;
+}
+
+.logo img{
+    height: 50px;
+}
+.horizontal-menu nav {
+    left: 190px;
+}
