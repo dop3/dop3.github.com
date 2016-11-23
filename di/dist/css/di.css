@@ -8,6 +8,14 @@
     color: #DB1241;
 }
 
+.cssload-loader {
+    border: 12px solid rgb(0,99,190);
+}
+
+.cssload-loader-inner {
+    background-color: rgb(0, 99, 190);
+}
+
 .horizontal-menu a, .menu-side a, a.scroll-link{
     opacity: .7;
 }
@@ -33,7 +41,6 @@
 }
 
 .section-home .main-btn:hover {
-    color: white;
     background-color: #128E4C;
     border-color: #128E4C;
 }
@@ -41,3 +48,9 @@
 .section-home .notify-input-btn:hover {
     color: #128E4C;
 }
+
+.section-contact .main-btn:hover {
+    background-color: #DB1241;
+    border-color: #DB1241;
+}
+
