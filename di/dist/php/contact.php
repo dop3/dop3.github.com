@@ -1,7 +1,7 @@
 <?php
 
 $title = 'Destination Italia Coming Soon contact';
-$to = 'marcellostani@gmail.com';
+$to = 'info@destinationitalia.com';
 $subject = 'Destination Italia Coming Soon contact';
 $headers = 'From: (Destination Italia Coming Soon contact)' . "\r\n" . 'Content-type: text/html; charset=utf-8';
 
@@ -218,7 +218,7 @@ if ( ! empty( $_POST['name'] ) && ! empty( $_POST['email'] ) && ! empty( $_POST[
         $mail->isSMTP();                                      // Set mailer to use SMTP
         $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
         $mail->SMTPAuth = true;                               // Enable SMTP authentication
-        $mail->Username = 'supportotecnico@destinationitalia.com';                 // SMTP username
+        $mail->Username = 'infodestinationitalia@gmail.com';                 // SMTP username
         $mail->Password = 'Destin4tionP4ss!';                           // SMTP password
         $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
         $mail->Port = 587;                                    // TCP port to connect to
