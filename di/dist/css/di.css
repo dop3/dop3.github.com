@@ -8,20 +8,20 @@
     color: #DF083E;
 }
 
-.horizontal-menu a, .menu-side a{
+.horizontal-menu a, .menu-side a, a.scroll-link{
     opacity: .7;
 }
-.horizontal-menu .active a, .horizontal-menu a:hover, .menu-side a:hover{
+.horizontal-menu .active a, .horizontal-menu a:hover, .menu-side a:hover, a.scroll-link:hover{
     opacity: 1;
 }
 
-.horizontal-menu .active a.active-green-color, .horizontal-menu a.active-green-color:hover, .menu-side a.active-green-color:hover {
+.horizontal-menu .active a.active-green-color, .horizontal-menu a.active-green-color:hover, .menu-side a.active-green-color:hover, a.hover-green-color:hover {
     color: #007537;
 }
-.horizontal-menu .active a.active-white-color, .horizontal-menu a.active-white-color:hover, .menu-side a.active-white-color:hover   {
+.horizontal-menu .active a.active-white-color, .horizontal-menu a.active-white-color:hover, .menu-side a.active-white-color:hover, a.hover-white-color:hover   {
     color: #ffffff;
 }
-.horizontal-menu .active a.active-red-color, .horizontal-menu a.active-red-color:hover, .menu-side a.active-red-color:hover {
+.horizontal-menu .active a.active-red-color, .horizontal-menu a.active-red-color:hover, .menu-side a.active-red-color:hover, a.hover-red-color:hover {
     color: #DF083E;
 }
 
@@ -30,4 +30,14 @@
 }
 .horizontal-menu nav {
     left: 190px;
+}
+
+.section-home .main-btn:hover {
+    color: white;
+    background-color: #007537;
+    border-color: #007537;
+}
+
+.section-home .notify-input-btn:hover {
+    color: #007537;
 }
