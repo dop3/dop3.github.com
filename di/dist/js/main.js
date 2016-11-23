@@ -510,7 +510,7 @@ function styleHelper() {
         $(this).css('z-index', 0);
         if ($(this).find('.overlay').length === 0) {
             if($(this).data("overlay-image")){
-                var bgStyle = 'background: ' + $(this).data("overlay-color") + ' url(' + $(this).data("overlay-image") + ') no-repeat center center fixed; background-size: cover; background-blend-mode: multiply;';
+                var bgStyle = 'background: ' + $(this).data("overlay-color") + ' url(' + $(this).data("overlay-image") + ') no-repeat center center fixed; background-size: cover; background-blend-mode: color-burn;';
             }else{
                 var bgStyle = 'background-color: ' + $(this).data("overlay-color") + ';';
             }
