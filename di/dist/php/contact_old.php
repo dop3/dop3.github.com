@@ -143,7 +143,32 @@ $message = '
 							<table cellpadding="0" cellspacing="0" border="0" align="center" width="600" class="container">
 								<tr>
 									<td class="movableContentContainer bgItem" colspan="2">
-										
+										<div class="movableContent" style="background: rgba(0,0,0,.85);">
+											<table cellpadding="0" cellspacing="0" border="0" align="center" width="600" class="container">
+												<tr height="40">
+													<td width="200">&nbsp;</td>
+													<td width="200">&nbsp;</td>
+													<td width="200">&nbsp;</td>
+												</tr>
+												<tr>
+													<td width="200" valign="top">&nbsp;</td>
+													<td width="200" valign="top" align="center">
+														<div class="contentEditableContainer contentImageEditable">
+						                					<div class="contentEditable" align="center" style="max-width: 7.2em; max-height: 7.2em; width: 7.2em; height: 7.2em; padding: 9px; text-align: center; display: table-cell; vertical-align: middle;">
+						                  						<img src=http://template.brainwave.scientecraft.com/build/img/content/logo_2.png width="107" height="102"  alt="Logo"/>
+						                					</div>
+						              					</div>
+													</td>
+													<td width="200" valign="top">&nbsp;</td>
+												</tr>
+												<tr height="25">
+													<td width="200">&nbsp;</td>
+													<td width="200">&nbsp;</td>
+													<td width="200">&nbsp;</td>
+												</tr>
+											</table>
+										</div>
+
 										<div class="movableContent:>
 											<table cellpadding="0" cellspacing="0" border="0" align="center" width="600" class="container">
 												<tr>
@@ -184,8 +209,6 @@ $message = '
 														<div class="contentEditableContainer contentTextEditable">
 						                					<div class="contentEditable" align="left" >
 						                  						' . $_POST['msg'] . '
-						                  						<br />
-						                  						<br />
 						                					</div>
 						              					</div>
 													</td>
@@ -206,45 +229,21 @@ $message = '
 ';
 
 if ( ! empty( $_POST['name'] ) && ! empty( $_POST['email'] ) && ! empty( $_POST['msg'] ) ) {
-    if ( filter_var( $_POST['email'], FILTER_VALIDATE_EMAIL ) ) {
-        // send
-        require 'PHPMailerAutoload.php';
+	if ( filter_var( $_POST['email'], FILTER_VALIDATE_EMAIL ) ) {
+	    $mail_result = mail( $to, $subject, $message, $headers );
 
-        $mail = new PHPMailer;
-
-//        $mail->SMTPDebug = 3;                               // Enable verbose debug output
-
-
-        $mail->isSMTP();                                      // Set mailer to use SMTP
-        $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
-        $mail->SMTPAuth = true;                               // Enable SMTP authentication
-        $mail->Username = 'supportotecnico@destinationitalia.com';                 // SMTP username
-        $mail->Password = 'Destin4tionP4ss!';                           // SMTP password
-        $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
-        $mail->Port = 587;                                    // TCP port to connect to
-
-        $mail->setFrom('info@destinationitalia.com', 'Coming Soon Contact Form');
-        $mail->addAddress($to, $_POST['name']);     // Add a recipient
-
-        $mail->isHTML(true);                                  // Set email format to HTML
-
-        $mail->Subject = $subject;
-        $mail->Body    = $message;
-
-        if(!$mail->send()) {
-            $result['msg'] = '<span class="danger">Error sending Mail</span>';
-            $result['status'] = 'error';
-        } else {
-            $result['status'] = 'success';
-            $result['msg'] = '<span class="success">Your email was sent!</span>';
-        }
-    }else{
-        $result['status'] = 'error';
-        $result['msg'] = '<span class="danger">Please input a valid email address!</span>';
-    }
+	    if ( ! $mail_result ) {
+	    	$result['msg'] = '<span class="danger">Error sending Mail</span>';
+	    	$result['status'] = 'error';
+	    } else {
+	    	$result['status'] = 'success';
+	    	$result['msg'] = '<span class="success">Your email was sent!</span>';
+	    }
+	}
 } else {
-    $result['status'] = 'error';
-    $result['msg'] = '<span class="danger">All fields must be filled!</span>';
+	$result['status'] = 'error';
+	$result['msg'] = '<span class="danger">All fields must be filled!</span>';
 }
 
 echo json_encode($result);
+?>
