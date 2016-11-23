@@ -509,7 +509,12 @@ function styleHelper() {
     $('[data-overlay-color]').each(function () {
         $(this).css('z-index', 0);
         if ($(this).find('.overlay').length === 0) {
-            $(this).append('<div class="overlay" style="background-color: ' + $(this).data("overlay-color") + '; opacity: ' + $(this).data("overlay-opacity") + '"></div>');
+            if($(this).data("overlay-image")){
+                var bgStyle = 'background: ' + $(this).data("overlay-color") + ' url(' + $(this).data("overlay-image") + ') no-repeat center center fixed; background-size: cover;';
+            }else{
+                var bgStyle = 'background-color: ' + $(this).data("overlay-color") + ';';
+            }
+            $(this).append('<div class="overlay" style="' + bgStyle + ' opacity: ' + $(this).data("overlay-opacity") + '"></div>');
         }
     });
 }
