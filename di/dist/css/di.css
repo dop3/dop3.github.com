@@ -1,5 +1,19 @@
-h1 {
-    font-family: "brandon-grotesque",sans-serif;
+@media (min-width: 768px) {
+    .frame {
+        border: solid white 10px;
+    }
+}
+
+.heading-text {
+    font-size: 3.3rem;
+    line-height: 3.2rem;
+    font-weight: 100;
+}
+
+.regular-text {
+    font-size: 1.5rem;
+    font-weight: 100;
+    line-height: 2.5rem;
 }
 
 .green-color{
