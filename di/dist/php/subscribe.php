@@ -1,8 +1,8 @@
 <?php
 include "MailChimp.php";
 
-$MC_API_KEY = '4bd05a15aa28acbcacf4b37f845eb280-us10';
-$MC_FORM_ID = 'd0cd4d4dad';
+$MC_API_KEY = '41117a757647c09c497386cf6fed4a21-us14';
+$MC_FORM_ID = '33d233dfb1';
 
 if ( empty( $MC_API_KEY ) ) {
 	die( '<span class="danger">Admin please enter API key</span>' );
