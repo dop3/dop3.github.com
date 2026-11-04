@@ -124,6 +124,7 @@ h3{font-size:19px;font-weight:500;margin:0 0 8px;letter-spacing:-.005em}
 .contact h2{margin-bottom:20px}
 .contact .mail{font-family:var(--display);font-weight:600;font-size:clamp(24px,4.4vw,48px);letter-spacing:-.02em;color:var(--text);border-bottom:2px solid var(--accent);overflow-wrap:anywhere}
 .contact .mail:hover{text-decoration:none;color:var(--accent)}
+.contact .intro{font-size:19px;color:var(--muted);margin:0 0 28px}
 .contact .cta{margin-top:36px}
 .contact p{color:var(--muted);margin:28px 0 0}
 .note{color:var(--muted);margin:28px 0 0}
