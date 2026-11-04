@@ -19,8 +19,11 @@
 <meta property="og:image:alt" content="Marcello Stani · Fractional CTO · Software Architect & Craftsman">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://marcellostani.it/assets/og-image.png">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="it_IT">
 <meta name="theme-color" content="#12141A">
 <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/InterDisplay-SemiBold.woff" as="font" type="font/woff" crossorigin>
 <link rel="stylesheet" href="assets/site.css">
 <script type="application/ld+json">
@@ -35,11 +38,11 @@
     <a class="brand" href="./"><img src="assets/logo.svg" alt="" width="32" height="32">Marcello Stani</a>
     <nav class="nav" aria-label="Main">
       <span class="links">
-        <a href="#services">Services</a>
         <a href="#work">Work</a>
+        <a href="#services">Services</a>
         <a href="#contact">Contact</a>
       </span>
-      <div class="lang" aria-label="Language">
+      <div class="lang" role="group" aria-label="Language">
         <span aria-current="true">EN</span><a href="it/" hreflang="it" lang="it">IT</a>
       </div>
     </nav>
@@ -63,8 +66,8 @@
       </div>
       <svg class="layers" viewBox="0 0 300 300" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
         <polygon points="150,170 270,230 150,290 30,230" opacity=".4"/>
-        <polygon points="150,95 270,155 150,215 30,155" opacity=".65" fill="#12141A"/>
-        <polygon points="150,20 270,80 150,140 30,80" fill="#12141A"/>
+        <polygon points="150,95 270,155 150,215 30,155" opacity=".65" class="solid"/>
+        <polygon points="150,20 270,80 150,140 30,80" class="solid"/>
         <line x1="150" y1="140" x2="150" y2="290" opacity=".3" stroke-dasharray="4 6"/>
       </svg>
     </div>
@@ -76,8 +79,37 @@
         <li><b>20+</b><span>years building products in production</span></li>
         <li><b>4</b><span>startups as technical lead</span></li>
         <li><b>1</b><span>platform acquired for its technology</span></li>
-        <li><b>500</b><span>Startups accelerator alumnus, Mountain View &amp; SF</span></li>
+        <li class="name"><b>500 Startups</b><span>accelerator alumnus, Mountain View &amp; SF</span></li>
       </ul>
+    </div>
+  </section>
+
+  <section class="block" id="work">
+    <div class="wrap">
+      <p class="label">Selected work</p>
+      <h2>Four startups, one acquisition, and the platforms in between.</h2>
+      <ul class="work">
+        <li><span class="who">Wonderful Italy</span><p class="what">Passepartout, a centralized SSO/BFF architecture (Keycloak, Kong, Redis, FastAPI) serving multiple apps, plus event-driven Python microservices on AWS.</p><span class="tag">Architecture</span></li>
+        <li><span class="who">Tomasi Auto</span><p class="what">Vehicle management platform on Symfony/API Platform and Next.js, with catalog sync and cost management across a multi-site network.</p><span class="tag">Architecture</span></li>
+        <li><span class="who">RendersiConto</span><p class="what">Compliance SaaS for Italian nonprofits under the Third Sector reform.</p><span class="tag">CTO · Co-founder</span></li>
+        <li><span class="who">EDGAR</span><p class="what">Digital concierge platform for hospitality hosts with 20+ PMS and booking integrations. Acquired by Manet Mobile Solutions in 2022.</p><span class="tag">Acquired</span></li>
+        <li><span class="who">WeTipp</span><p class="what">Community engagement platform used by the European Commission and the Italian Ministry of Education. 500 Startups accelerator.</p><span class="tag">500 Startups</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="block lazy" id="lazy">
+    <div class="wrap">
+      <div>
+        <p class="label">Lazy by Design</p>
+        <h2>My greatest professional quality is laziness.</h2>
+      </div>
+      <div class="copy">
+        <p>I hate doing the same thing twice. So I automate it, simplify it, or design it away.</p>
+        <p class="muted">For clients that means systems with fewer moving parts, less manual work and lower maintenance costs for years. Good laziness isn't doing less: it's doing it once.</p>
+        <p class="muted">AI is part of how I work, not a buzzword on top: agentic tools driven by solid architecture and clear specs deliver senior-level quality at a pace that used to take a whole team.</p>
+        <a class="btn badge" href="https://www.linkedin.com/company/lazybydesign/"><img src="assets/logo.svg" alt="" width="28" height="28">Lazy by Design on LinkedIn</a>
+      </div>
     </div>
   </section>
 
@@ -96,38 +128,9 @@
     </div>
   </section>
 
-  <section class="block lazy" id="lazy">
-    <div class="wrap">
-      <div>
-        <p class="label">Lazy by Design</p>
-        <h2>My greatest professional quality is laziness.</h2>
-      </div>
-      <div class="copy">
-        <p>I hate doing the same thing twice. So I automate it, simplify it, or design it away.</p>
-        <p class="muted">For clients that means systems with fewer moving parts, less manual work and lower maintenance costs for years. Good laziness isn't doing less: it's doing it once.</p>
-        <p class="muted">AI is part of how I work, not a buzzword on top: agentic tools driven by solid architecture and clear specs deliver senior-level quality at a pace that used to take a whole team.</p>
-        <a class="badge" href="https://www.linkedin.com/company/lazybydesign/"><img src="assets/logo.svg" alt="" width="28" height="28">Lazy by Design on LinkedIn</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="block" id="work">
-    <div class="wrap">
-      <p class="label">Selected work</p>
-      <h2>Four startups, one acquisition, and the platforms in between.</h2>
-      <ul class="work">
-        <li><span class="who">Wonderful Italy</span><p class="what">Passepartout, a centralized SSO/BFF architecture (Keycloak, Kong, Redis, FastAPI) serving multiple apps, plus event-driven Python microservices on AWS.</p><span class="tag">Architecture</span></li>
-        <li><span class="who">Tomasi Auto</span><p class="what">Vehicle management platform on Symfony/API Platform and Next.js, with catalog sync and cost management across a multi-site network.</p><span class="tag">Architecture</span></li>
-        <li><span class="who">RendersiConto</span><p class="what">Compliance SaaS for Italian nonprofits under the Third Sector reform.</p><span class="tag">CTO · Co-founder</span></li>
-        <li><span class="who">EDGAR</span><p class="what">Digital concierge platform for hospitality hosts with 20+ PMS and booking integrations. Acquired by Manet Mobile Solutions in 2022.</p><span class="tag">Acquired</span></li>
-        <li><span class="who">WeTipp</span><p class="what">Community engagement platform used by the European Commission and the Italian Ministry of Education. 500 Startups accelerator.</p><span class="tag">500 Startups</span></li>
-      </ul>
-    </div>
-  </section>
-
   <section class="block" id="stack">
     <div class="wrap">
-      <p class="label">Stack</p>
+      <h2 class="label">Stack</h2>
       <ul class="stack">
         <li>PHP · Symfony</li><li>API Platform</li><li>Next.js · React</li><li>Python · FastAPI</li><li>MongoDB</li><li>PostgreSQL · MySQL</li><li>AWS</li><li>Keycloak</li><li>LLMs</li>
       </ul>
