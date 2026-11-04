@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'">
 <title>Marcello Stani · Fractional CTO & Software Architect</title>
 <meta name="description" content="Fractional CTO and software architect with 20+ years building products that run in production. Architecture for SaaS and B2B platforms, AWS, identity & access, AI-native engineering.">
 <link rel="canonical" href="https://marcellostani.it/">
@@ -43,7 +44,7 @@
         <a href="#contact">Contact</a>
       </span>
       <div class="lang" role="group" aria-label="Language">
-        <span aria-current="true">EN</span><a href="it/" hreflang="it" lang="it">IT</a>
+        <a href="./" aria-current="page" aria-label="English">EN</a><a href="it/" hreflang="it" lang="it" aria-label="Italiano">IT</a>
       </div>
     </nav>
   </div>
@@ -92,9 +93,30 @@
         <li><span class="who">Wonderful Italy</span><p class="what">Passepartout, a centralized SSO/BFF architecture (Keycloak, Kong, Redis, FastAPI) serving multiple apps, plus event-driven Python microservices on AWS.</p><span class="tag">Architecture</span></li>
         <li><span class="who">Tomasi Auto</span><p class="what">Vehicle management platform on Symfony/API Platform and Next.js, with catalog sync and cost management across a multi-site network.</p><span class="tag">Architecture</span></li>
         <li><span class="who">RendersiConto</span><p class="what">Compliance SaaS for Italian nonprofits under the Third Sector reform.</p><span class="tag">CTO · Co-founder</span></li>
-        <li><span class="who">EDGAR</span><p class="what">Digital concierge platform for hospitality hosts with 20+ PMS and booking integrations. Acquired by Manet Mobile Solutions in 2022.</p><span class="tag">Acquired</span></li>
+        <li><span class="who">EDGAR</span><p class="what">Digital concierge platform for hospitality hosts with 20+ PMS and booking integrations. Acquired by Manet Mobile Solutions in 2022.</p><span class="tag outcome">Acquired</span></li>
         <li><span class="who">WeTipp</span><p class="what">Community engagement platform used by the European Commission and the Italian Ministry of Education. 500 Startups accelerator.</p><span class="tag">500 Startups</span></li>
       </ul>
+    </div>
+  </section>
+
+  <section class="block" id="services">
+    <div class="wrap">
+      <p class="label">What I do</p>
+      <h2>Architecture that holds up when the business changes direction.</h2>
+      <div class="grid">
+        <div class="card"><span class="k">01</span><h3>Fractional CTO</h3><p>Technical leadership, roadmap and team guidance at the level of a senior CTO, for the time you actually need it.</p></div>
+        <div class="card"><span class="k">02</span><h3>SaaS &amp; B2B architecture</h3><p>API design, multi-service systems and event-driven integrations built to scale without rewrites.</p></div>
+        <div class="card"><span class="k">03</span><h3>Identity &amp; access</h3><p>SSO, Keycloak and role-based access control across multiple apps, done once and done right.</p></div>
+        <div class="card"><span class="k">04</span><h3>Cloud &amp; delivery</h3><p>AWS infrastructure (ECS, SQS, SSM, CDK), CI/CD and secure deployment pipelines.</p></div>
+        <div class="card"><span class="k">05</span><h3>AI integration</h3><p>LLM features where they create real value, and AI-native engineering workflows for teams.</p></div>
+        <div class="card"><span class="k">06</span><h3>Audits &amp; due diligence</h3><p>Technical audits and product strategy for founders before the big decisions.</p></div>
+      </div>
+      <div class="stack-block" id="stack">
+        <h2 class="label">Stack</h2>
+        <ul class="stack">
+          <li>PHP · Symfony</li><li>API Platform</li><li>Next.js · React</li><li>Python · FastAPI</li><li>MongoDB</li><li>PostgreSQL · MySQL</li><li>AWS</li><li>Keycloak</li><li>LLMs</li>
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -113,35 +135,17 @@
     </div>
   </section>
 
-  <section class="block" id="services">
-    <div class="wrap">
-      <p class="label">What I do</p>
-      <h2>Architecture that holds up when the business changes direction.</h2>
-      <div class="grid">
-        <div class="card"><span class="k">01</span><h3>Fractional CTO</h3><p>Technical leadership, roadmap and team guidance at the level of a senior CTO, for the time you actually need it.</p></div>
-        <div class="card"><span class="k">02</span><h3>SaaS &amp; B2B architecture</h3><p>API design, multi-service systems and event-driven integrations built to scale without rewrites.</p></div>
-        <div class="card"><span class="k">03</span><h3>Identity &amp; access</h3><p>SSO, Keycloak and role-based access control across multiple apps, done once and done right.</p></div>
-        <div class="card"><span class="k">04</span><h3>Cloud &amp; delivery</h3><p>AWS infrastructure (ECS, SQS, SSM, CDK), CI/CD and secure deployment pipelines.</p></div>
-        <div class="card"><span class="k">05</span><h3>AI integration</h3><p>LLM features where they create real value, and AI-native engineering workflows for teams.</p></div>
-        <div class="card"><span class="k">06</span><h3>Audits &amp; due diligence</h3><p>Technical audits and product strategy for founders before the big decisions.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="block" id="stack">
-    <div class="wrap">
-      <h2 class="label">Stack</h2>
-      <ul class="stack">
-        <li>PHP · Symfony</li><li>API Platform</li><li>Next.js · React</li><li>Python · FastAPI</li><li>MongoDB</li><li>PostgreSQL · MySQL</li><li>AWS</li><li>Keycloak</li><li>LLMs</li>
-      </ul>
-    </div>
-  </section>
-
   <section class="contact" id="contact">
     <div class="wrap">
       <p class="label">Contact</p>
       <h2>Have a system that needs to hold up?</h2>
       <a class="mail" href="mailto:marcellostani@gmail.com">marcellostani@gmail.com</a>
+      <div class="cta">
+        <a class="btn" href="https://www.linkedin.com/in/marcellostani/" rel="me">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4v11H3zM9.5 9.75h3.8v1.5h.05c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.78 2.65 4.78 6.1v6.46h-4v-5.73c0-1.37-.03-3.13-1.9-3.13-1.91 0-2.2 1.49-2.2 3.03v5.83h-4z"/></svg>
+          LinkedIn
+        </a>
+      </div>
       <p>Based in Calabria, Italy. Working with teams across Italy and remotely.</p>
     </div>
   </section>
