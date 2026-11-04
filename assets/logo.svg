@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" role="img" aria-label="Marcello Stani logo">
+  <circle cx="600" cy="600" r="600" fill="#02586A"/>
+  <g stroke="#FFFFFF" stroke-width="102" stroke-linecap="round" fill="none">
+    <line x1="205" y1="664" x2="333" y2="537"/>
+    <line x1="381" y1="664" x2="509" y2="537"/>
+    <line x1="557" y1="664" x2="685" y2="537"/>
+    <line x1="818" y1="532" x2="999" y2="532"/>
+    <line x1="748" y1="667" x2="929" y2="667"/>
+  </g>
+</svg>
