@@ -8,6 +8,24 @@
         "value": "inter",
         "createdAt": "2026-11-04T09:21:45.332Z",
         "reason": "user brief: 'Keep the visual identity ... Inter / Inter Display' (owner-pinned font)"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-11-04T09:35:40.033Z",
+        "reason": "false positive verified by audit subagent: .stats li have 32px padding; section border-bottom is a divider list, no text touches an edge"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "it/index.html"
+        ],
+        "createdAt": "2026-11-04T09:35:40.068Z",
+        "reason": "false positive verified by audit subagent: .stats li have 32px padding; section border-bottom is a divider list, no text touches an edge"
       }
     ]
   }
