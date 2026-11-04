@@ -25,7 +25,7 @@ A senior engineer who both designs the system and writes the critical code, then
 ## Operating Context
 
 - Bilingual: English is the default at `/`, Italian at `/it/`; hreflang and canonical tags must stay consistent between them.
-- Contact is a `mailto:` to marcellostani@gmail.com plus LinkedIn (personal profile and the Lazy by Design company page).
+- Contact is a `mailto:` to ms@marcellostani.it plus LinkedIn (personal profile and the Lazy by Design company page).
 - Based in Calabria, Italy; works with teams across Italy and remotely.
 
 ## Capabilities and Constraints
