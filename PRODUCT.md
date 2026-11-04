@@ -32,7 +32,7 @@ A senior engineer who both designs the system and writes the critical code, then
 
 - Zero external requests: no CDNs, no Google Fonts, no analytics, no cookies. The footer claims "No cookies, no tracking" and that claim must stay true.
 - Fonts are self-hosted Inter subsets (WOFF, OFL licence in `assets/fonts/OFL.txt`).
-- Footer carries a VAT number (P.IVA); currently a placeholder the owner will fill in.
+- Footer carries the VAT number (P.IVA IT09902710962) on every page, including 404.html.
 - Copy is owner-approved: change it only to fix an actual error; otherwise flag suggestions.
 
 ## Brand Commitments
